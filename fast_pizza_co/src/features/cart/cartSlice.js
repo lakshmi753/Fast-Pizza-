@@ -40,6 +40,8 @@ export const {
 
 export default cartSlice.reducer;
 
+export const getCart = (store) => store.cart.cart;
+
 export const getToatlCartQuantity = (store) =>
   store.cart.cart.reduce((acc, item) => acc + item.quantity, 0);
 
